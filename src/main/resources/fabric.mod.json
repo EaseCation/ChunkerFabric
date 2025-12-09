@@ -1,0 +1,38 @@
+{
+	"schemaVersion": 1,
+	"id": "chunker-fabric",
+	"version": "${version}",
+	"name": "Chunker Fabric",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/chunker-fabric/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			{
+				"value": "net.easecation.fabric.chunker.ChunkerFabric",
+				"adapter": "kotlin"
+			}
+		]
+	},
+	"mixins": [
+		"chunker-fabric.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*",
+		"fabric-language-kotlin": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
